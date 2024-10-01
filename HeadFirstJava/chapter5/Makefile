@@ -3,17 +3,17 @@ JAVA = java
 JFLAGS = -g
 
 SRCS = $(wildcard *.java)
-CLASSES = $(SRCS: .java = .class)
+CLASSES = $(SRCS:.java=.class)
 # CLASSES = $(patsubst %.java, %.class, $(SRCS))
 
-all:$(SRCS)
-	J
-%.java: %.class
+all:$(CLASSES)
+
+%.class: %.java
 	$(JAVAC) $(JFLAGS) -g $<
 
 clean:
 	rm -rf *.class
 
-run:all 
+run: all 
 	$(JAVA) SimpleStartupGame
 

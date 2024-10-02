@@ -6,16 +6,23 @@ class SimpleStartup { // Encapsulation?
     locationCells = locs;
   }
 
-  public void setLocationSinked(int loc) {
-    loc = -1;
+  //  public void setSingleCell(int pos, int num) {
+  //   locationCells[pos] = num;
+  // }
+
+  public void showLocationCells(int[] locs) {
+    for (int cell : locationCells) {
+      System.out.println(cell);
+    }
   }
 
   public String checkYourself(int guess) {
     String result = "miss";
-    for (int cell : locationCells) {
-      if (guess == cell) {
+    for (int i = 0; i < locationCells.length; i++) {
+      if (guess == locationCells[i]) {
         result = "hit";
         numOfHits++;
+        locationCells[i] = -1;
         break;
       } // end if
     } // end for
@@ -23,6 +30,7 @@ class SimpleStartup { // Encapsulation?
       result = "kill";
     } // end if
     System.out.println(result);
+    showLocationCells(locationCells);
     return result;
   } // end method
 } // close class

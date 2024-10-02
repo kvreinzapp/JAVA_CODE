@@ -14,9 +14,7 @@ class SimpleStartupGame {
       int guess = helper.getUserInput("enter a number");
       String result = theStartup.checkYourself(guess);
       numOfGuess++;
-      if (result.equals("hit")) {
-        theStartup.setLocationSinked(guess);
-      }
+      // theStartup.showLocationCells(locations);
       if (result.equals("kill")) {
         isAlive = false;
         System.out.println("You took " + numOfGuess + " guesses");

@@ -6,6 +6,10 @@ class SimpleStartup { // Encapsulation?
     locationCells = locs;
   }
 
+  public void setLocationSinked(int loc) {
+    loc = -1;
+  }
+
   public String checkYourself(int guess) {
     String result = "miss";
     for (int cell : locationCells) {

@@ -1,4 +1,4 @@
-class StartBust {
+class StartupBust {
   public static void main(String[] args) {
     int numOfGuess = 0;
     GameHelper helper = new GameHelper();

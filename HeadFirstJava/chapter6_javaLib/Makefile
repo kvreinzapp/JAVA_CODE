@@ -12,4 +12,4 @@ clean:
 	rm -rf *.class
 
 run: all
-	$(JAVA) SimpleStartupGame
+	$(JAVA) StartBust

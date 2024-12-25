@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Part2
+comment0.text=\n\ This\ class\ contains\ methods\ to\ find\ a\ gene\ in\ a\ DNA\ strand.\n\ It\ includes\ a\ method\ to\ find\ a\ gene\ given\ a\ start\ codon\ and\ a\ stop\ codon.\n\ \n\ @author\ Klaus\ Von\ Reinherz\n\ @version\ 1.0\n
+comment1.params=dna\ startCodon\ stopCodon
+comment1.target=java.lang.String\ findSimpleGene(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=void\ testSimpleGene()
+numComments=3
